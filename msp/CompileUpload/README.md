@@ -1,5 +1,4 @@
 msp430-gcc -Os -Wall -g -mmcu=msp430x2013 -c test.c
-
 msp430-gcc -g -mmcu=msp430x2013 -o test.elf test.o
 sudo mspdebug uif 'erase' 'load test.elf' 'exit'
 
