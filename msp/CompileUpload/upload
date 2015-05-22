@@ -1,0 +1,8 @@
+#! /bin/bash
+##released under creative commons license you can share and change it as per your need a$
+#author : rohit shetty (rohitfoss00@gmail.com)
+#date:17/07/2014 
+##
+
+sudo mspdebug uif 'erase' 'load '$1'.elf'  'exit'
+

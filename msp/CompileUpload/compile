@@ -1,0 +1,13 @@
+#!/bin/bash
+##released under creative commons license you can share and change it as per your need a$
+#author : rohit shetty (rohitfoss00@gmail.com)
+#date:17/07/2014 
+##
+
+####/read mclinux.txt along with this############
+
+msp430-gcc -Os -Wall -g -mmcu=msp430x2013 -c $1.c
+
+msp430-gcc -g -mmcu=msp430x2013 -o $1.elf $1.o
+
+printf Compiled \n
