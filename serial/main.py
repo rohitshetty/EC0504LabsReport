@@ -5,6 +5,9 @@ from time import sleep
 portList = serial.tools.list_ports.comports()
 
 for port in portList:
+""" 
+This is here to select one available device among others
+"""
  if(not port[2]=='n/a'):
   portLine = port[0]
   connection = serial.Serial(portLine,115200)
